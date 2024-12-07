@@ -1,0 +1,12 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block main_content %}
+<p>Utilize o formulário abaixo para efetuar a busca.</p>
+<form method="POST" action="#" id="form" class="form-inline">
+    {% csrf_token %}
+    <input type="text" name="nome" id="nome" class="form-control mr-sm-2 mb-sm-0"/>
+    <input type="submit" value="Pesquisar" class="btn btn-success"/>
+</form>
+<div id="saida"></div>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

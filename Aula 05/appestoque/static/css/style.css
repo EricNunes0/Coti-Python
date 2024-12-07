@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #1040F0;
+    padding: 16px;
+}
+header > h3 {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+}
+.flex-column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -1,0 +1,24 @@
+<div id="footer-menu" class="flex-column closed">
+    <div id="footer-button-div">
+        <button type="button" id="footer-button" onclick="document.querySelector('#footer-menu').classList.toggle('closed')"></button>
+    </div>
+    <div class="flex-row" style="gap: 16px;">
+        <div>
+            <a class="link-btn" href="{% url 'estoque:home' %}">Home</a>
+        </div>
+        <div>
+            <a class="link-btn" href="{% url 'estoque:cadastro' %}">Cadastro</a>
+        </div>
+        <div>
+            <a class="link-btn" href="{% url 'estoque:lista' %}">Lista</a>
+        </div>
+        <div>
+            <a class="link-btn" href="{% url 'estoque:busca' %}">Busca</a>
+        </div>
+    </div>
+    <!-- Apagar -->
+    <script>
+        const menu = document.querySelector("#footer-menu");
+        const colors = [];
+    </script>
+</div>

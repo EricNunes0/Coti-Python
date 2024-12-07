@@ -1,0 +1,60 @@
+:root {
+    --footer-menu-background-color: #1040F0;
+    --footer-menu-height: 100px;
+    --footer-button-width: 30px;
+    --footer-button-height: 20px;
+}
+#footer-menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-menu-height);
+    background-color: var(--footer-menu-background-color);
+    transition: all 0.3s ease;
+}
+#footer-menu.closed {
+    bottom: calc(var(--footer-menu-height) * -1);
+}
+#footer-button-div {
+    position: absolute;
+    top: calc(var(--footer-button-height) * -1);
+}
+#footer-button {
+    background-color: var(--footer-menu-background-color);
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    width: var(--footer-button-width);
+    height: var(--footer-button-height);
+}
+#footer-button::before {
+    content: "\02C5";
+    color: #FFF;
+    font-size?: 24px;
+}
+#footer-menu.closed > #footer-button-div > #footer-button::before {
+    content: "\02C4";
+}
+.link-btn {
+    display: block;
+    width: 120px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.link-btn:hover {
+    background-color: #FFF;
+    color: var(--footer-menu-background-color);
+    text-decoration: none;
+    transform: scale(1.1);
+}
